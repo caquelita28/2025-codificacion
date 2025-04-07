@@ -1,4 +1,8 @@
-if __name__ == "__main__":
-    print(chr(98))
-    print("=======")
-    print(ord('c'))
+def tabla_ascii():
+    qty = 6
+    for i in range(32, 255):
+        print(str(i).ljust(4), ": ", chr(i), end="")
+        if not (i % qty):
+            print()
+
+tabla_ascii()
